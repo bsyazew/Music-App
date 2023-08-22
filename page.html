@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../responsive-landing-page/src/styles.css" />
+    <title>Why I love music</title>
+  </head>
+  <body>
+    <div class="hold">
+      <h1>
+        🎵🎷🎺🎸🪕🎻🎹📯🎼🥁🎶
+        <br />
+        <hr />
+        <br />
+        <strong>I love music</strong>
+      </h1>
+      <h2>
+        There's a song for every occasion!
+
+        <br />
+        Here are my go-to apps to listen on:
+      </h2>
+
+      <a href="https://open.spotify.com/" target="_blank" class="find-out">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/081/400/original/Spotify_Logo_CMYK_Green.png?1683732899"
+          alt="spotify"
+          class="sp"
+        />
+      </a>
+      <a href="https://soundcloud.com/" target="_blank" class="find-out">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/081/399/original/SoundCloud-Logo-700x394.png?1683732882"
+          alt="soundcloud"
+          class="sp"
+        />
+      </a>
+
+      <p>
+        There is even a scientific reason as to why music makes us feel so
+        great!
+        <br />
+        <br />
+        Our favorite melodies release dopamine, known as the feel-good hormone,
+        which activates our brain's pleasure and reward system. Music can have a
+        positive, immediate impact on our mental state; fast tempos can
+        psychologically and physiologically arouse us, helping energize us for
+        the day.
+        <br />
+        <br />
+        Find out all the ways different music affects us
+        <a
+          href="https://namica.org/blog/music-that-makes-us-feel-good-playlist/#:~:text=Our%20favorite%20melodies%20release%20dopamine,energize%20us%20for%20the%20day."
+          target="_blank"
+          class="find-out"
+        >
+          <em>here</em>.
+        </a>
+      </p>
+      <button>
+        <span class="first">Find a playlist to </span>
+        <span class="second"> fit your mood🎶 </span>
+      </button>
+      <br />
+      <hr />
+      <h3>This page was created by Bethlehem Yazew</h3>
+    </div>
+    <script>
+      function listen() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address");
+        let genre = prompt("What genre of music do you like best?");
+        genre = genre.toLowerCase();
+        genre = genre.trim();
+
+        if (genre === "rock" || genre === "heavy metal") {
+          alert(`Thank you ${name}, we'll email you your bespoke ${genre} playlist very soon!
+        Rock on!🎸`);
+        } else {
+          alert(
+            `Thank you ${name}, we'll email you your bespoke ${genre} playlist very soon!😊`
+          );
+        }
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", listen);
+    </script>
+    <script src="../responsive-landing-page/src/index.js"></script>
+  </body>
+</html>
